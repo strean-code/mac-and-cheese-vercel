@@ -1,0 +1,106 @@
+
+<%- include("partials/header") %>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<main class="container">
+
+<div class="generator-panel">
+
+<h1>Build Your Perfect<br>Mac & Cheese</h1>
+
+<form class="mac-form">
+
+<div class="form-group">
+<label>Pasta:</label>
+<select id="pasta">
+<option>Elbow Macaroni</option>
+<option>Shells</option>
+<option>Penne</option>
+<option>Cavatappi</option>
+<option>Farfalle or Bow-Tie</option>
+<option>Rotini</option>
+<option>Rigatoni</option>
+<option>Fusilli</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Cheese:</label>
+<select id="cheese" name="cheese" multiple>
+  <option value="cheddar">Cheddar</option>
+  <option value="velveeta">Velveeta</option>
+  <option value="american">American</option>
+  <option value="monterey jack">Monterey Jack</option>
+  <option value="swiss">Swiss</option>
+  <option value="gruyere">Gruyère</option>
+  <option value="gouda">Gouda</option>
+  <option value="mozzarella">Mozzarella</option>
+  <option value="parmesan">Parmesan</option>
+  <option value="goat cheese">Goat Cheese</option>
+  <option value="blue cheese">Blue Cheese</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Add-ins:</label>
+<select id="addins" name="addins" multiple>
+    <option value="none">None</option>
+    <option value="bacon">Bacon</option>
+    <option value="buffalo chicken">Buffalo Chicken</option>
+    <option value="lobster">Lobster</option>
+    <option value="shrimp">Shrimp</option>
+    <option value="crab">Crab</option>
+    <option value="scallops">Scallops</option>
+    <option value="diced ham">Diced Ham</option>
+    <option value="diced spam">Diced Spam</option>
+    <option value="broccoli">Broccoli</option>
+    <option value="cauliflower">Cauliflower</option>
+    <option value="spinach">Spinach</option>
+    <option value="peas">Peas</option>
+    <option value="truffle oil">Truffle Oil</option>
+    <option value="pesto">Pesto</option>
+    <option value="chipotle peppers">Chipotle Peppers</option>
+    <option value="potatoes">Potatoes</option>
+    <option value="cream">Cream</option>
+    <option value="onions">Onions</option>
+    <option value="caribbean spices">Caribbean Spices</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Topping:</label>
+<select id="topping">
+<option>None</option>
+<option>Breadcrumbs</option>
+<option>Panko</option>
+<option>Crushed Crackers</option>
+<option>Crumbled Cheese Crackers</option>
+<option>Cheddar Cheese</option>
+<option>Caramelized Onions</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Heat Level:</label>
+<select id="heat">
+<option>Mild</option>
+<option>Medium</option>
+<option>Hot</option>
+</select>
+</div>
+ 
+<button type="button" id="generateBtn" class="generate-btn">
+Generate My Mac
+</button>
+
+<div class="g-recaptcha" data-sitekey="6LcR14QsAAAAAP3q-8vu1aWUBKiyqHgP-XKNwrXC"></div>
+
+<!--<div id="result" style="margin-top:20px;"></div>-->
+<div id="result"></div>
+</form>
+</div> 
+</main>
+
+<%- include("partials/footer") %>
+
