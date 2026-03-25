@@ -94,6 +94,12 @@ app.get("/mac-and-cheese-toppings",(req,res)=>{
 res.render("mac-toppings");
 });
 
+app.get("/privacy", (req, res) => {
+  res.render("privacy", {
+    title: "Privacy Policy | Mac & Cheese Universe"
+  });
+});
+
 app.get("/recipes/:slug", (req, res) => {
 
   const recipe = recipes[req.params.slug];
